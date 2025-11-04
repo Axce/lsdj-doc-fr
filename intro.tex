@@ -1,172 +1,175 @@
-\chapter{Getting Started}
+\chapter{Premiers pas}
 
-\section{Game Boy Sound}
-The Game Boy sound chip has four channels, each with 4-bit resolution.
+
+\section{Le son de la Game Boy}
+
+La puce sonore de la Game Boy dispose de quatre canaux, chacun avec une résolution de 4 bits.
 
 \begin{description}
-\item[Pulse Channel 1] Square wave with envelope and sweep functions.
-\item[Pulse Channel 2] Square wave with envelope function.
-\item[Wave Channel] Soft synthesizer, sample playback and speech synthesis.
-\item[Noise Channel] Noise with envelope and shape functions.
+\item[Canal Pulse 1] Onde carrée avec fonctions d’enveloppe et de balayage (sweep).
+\item[Canal Pulse 2] Onde carrée avec fonction d’enveloppe.
+\item[Canal Wave] Synthétiseur, lecture de samples et synthèse vocale logiciels.
+\item[Canal Noise] Bruit avec fonctions d’enveloppe et de forme.
 \end{description}
 
+\section{Touches}
 
-\section{Key Presses}
-In this documentation, key presses are marked up in this fashion:
+Dans cette documentation, les touches sont indiquées de la manière suivante :
 \begin{description}
-\item[\textsc{a}] \textsc{a} button
-\item[\textsc{b}] \textsc{b} button
-\item[\textsc{start}] start button
-\item[\textsc{select}] select button
-\item[\textsc{cursor}] any direction of the plus-shaped D-pad
-\item[\textsc{left}] D-pad left
-\item[\textsc{right}] D-pad right
-\item[\textsc{up}] D-pad up
-\item[\textsc{down}] D-pad down
-\item[\textsc{left/right}] D-pad left or right
-\item[\textsc{up/down}] D-pad up or down
-\item[\textsc{select+a}] pressing \textsc{a} while holding \textsc{select}
-\item[\textsc{select+(b,b)}] pressing \textsc{b} twice, while holding \textsc{select}
+\item[\textsc{a}] bouton \textsc{a}
+\item[\textsc{b}] bouton \textsc{b}
+\item[\textsc{start}] bouton \textsc{start}
+\item[\textsc{select}] bouton \textsc{select}
+\item[\textsc{cursor}] toute direction de la croix directionnelle
+\item[\textsc{left}] croix directionnelle gauche
+\item[\textsc{right}] croix directionnelle droite
+\item[\textsc{up}] croix directionnelle haut
+\item[\textsc{down}] croix directionnelle bas
+\item[\textsc{left/right}] croix directionnelle gauche ou droite
+\item[\textsc{up/down}] croix directionnelle haut ou bas
+\item[\textsc{select+a}] appuyer sur \textsc{a} en maintenant \textsc{select}
+\item[\textsc{select+(b,b)}] appuyer deux fois sur \textsc{b}, en maintenant \textsc{select}
 \end{description}
 
-\section{Navigating the Program}
+\section{Navigation dans le programme}
 
 \begin{figure}[hbtp]
 \centering
 \fbox{ \includegraphics{song} }
-\caption{Song Screen}
+\caption{Écran \textsc{song}}
 \label{fig:song}
 \end{figure}
 
-Little Sound Dj starts up in the song screen.
-The four columns \textsc{PU1, PU2, WAV} and \textsc{NOI} represent the four Game Boy sound channels.
-There are two pulse wave channels, one custom wave channel and one noise channel.
-Use the D-pad to move the cursor from channel to channel.
+Little Sound Dj démarre sur l’écran \textsc{song}.
+Les quatre colonnes \textsc{pu1, pu2, wav} et \textsc{noi} représentent les quatre canaux sonores de la Game Boy.
+Il y a deux canaux à onde carrée, un canal à onde personnalisée et un canal de bruit.
+Utilisez la croix directionnelle pour déplacer le curseur d’un canal à l’autre.
 
 \begin{figure}[hbtp]
 \centering
 \fbox{ \includegraphics[width=2.5cm]{map} }
-\caption{Screen Map}
+\caption{Carte des écrans}
 \label{fig:map}
 \end{figure}
 
-Little Sound Dj has nine screens, arranged in a map shown in the
-bottom right of the screen (figure~\ref{fig:map}). 
+Little Sound Dj comporte neuf écrans, disposés selon une carte affichée en bas à droite de l’écran (figure~\ref{fig:map}).
 
-The most useful screens are placed in the middle row, ordered by level of detail. 
-The song, chain and phrase screens are used for sequencing, and work together in a tree-structure
-fashion.  The song contains chains, each chain contains phrases, and each phrase contains notes.
-They are followed by the instrument and table screens, which are used to create sounds.
+Les écrans les plus utilisés se trouvent sur la rangée du milieu, classés par niveau de détail.
+Les écrans \textsc{song}, \textsc{chain} et \textsc{phrase} servent à la composition et fonctionnent en structure arborescente :
+le morceau (\textsc{song}) contient des chaînes (\textsc{chains}),
+chaque chaîne contient des phrases (\textsc{phrases}),
+et chaque phrase contient des notes.
+Ils sont suivis des écrans \textsc{instrument} et \textsc{table}, utilisés pour créer des sons.
 
-To move between the screens, press \textsc{select+cursor}.
+Pour passer d’un écran à l’autre, appuyez sur \textsc{select+cursor}.
 
-\section{Online Help}
+\section{Aide intégrée}
 
 \begin{figure}[hbtp]
-	\centering
-	\fbox{\includegraphics{findhelp}}
-	\caption{Project Screen Help}
+\centering
+\fbox{\includegraphics{findhelp}}
+\caption{Aide de l’écran \textsc{project}}
 \end{figure}
 
-To find the in-built help, move to project screen (above song screen) and tap \textsc{a} on \textsc{help}.
-The help screen lists button presses for the different screens, as well as a command list.
+Pour accéder à l’aide intégrée, allez sur l’écran \textsc{project} (au-dessus de l’écran \textsc{song}) et appuyez sur \textsc{a} sur \textsc{help}.
+L’écran d’aide répertorie les combinaisons de touches pour les différents écrans, ainsi qu’une liste de commandes.
 
-\section{Making Your First Sounds}
-Navigate to the song screen, and move the cursor to the \textsc{pu1} column. Tap the \textsc{a} button,
-and a new chain ``00'' will appear.
-Edit the chain by pressing \textsc{select+right} to enter the chain screen.
-There, tap \textsc{a} to insert a new phrase, then press \textsc{select+right} to go to the phrase screen.
+\section{Créer vos premiers sons}
+
+Allez sur l’écran \textsc{song}, placez le curseur sur la colonne \textsc{pu1}, et appuyez sur \textsc{a}.
+Une nouvelle chaîne « 00 » apparaît.
+Éditez-la en appuyant sur \textsc{select+right} pour ouvrir l’écran \textsc{chain}.
+Là, appuyez sur \textsc{a} pour insérer une nouvelle phrase, puis \textsc{select+right} pour passer à l’écran \textsc{phrase}.
 
 \begin{figure}[hbtp]
 \centering
 \fbox{\includegraphics{phrase}}
-\caption{Phrase Screen}
+\caption{Écran \textsc{phrase}}
 \label{fig:phrase1}
 \end{figure}
 
-In the phrase screen, you can enter notes to be played back. Move the cursor to the note
-column and press \textsc{a} to enter a note. The text C-2 will appear: C being the note, and 2 the
-octave. Press \textsc{start} to play the phrase. Notice how the phrase is played back from
-top to bottom. You can change the note by holding \textsc{a} and pressing the
-D-pad. \textsc{a+left/right} changes the note, and \textsc{a+up/down} changes octave.
+Dans cet écran, vous pouvez saisir des notes à jouer.
+Placez le curseur dans la colonne \textsc{note} et appuyez sur \textsc{a} : le texte C-2 apparaît : C étant la note (do), et 2 l’octave.
+Appuyez sur \textsc{start} pour lire la phrase.
+Remarquez que la phrase est lue de haut en bas.
+Vous pouvez modifier la note en maintenant \textsc{a} et en utilisant la croix directionnelle :
+\textsc{a+left/right} change la note, et \textsc{a+up/down} change l’octave.
 
-Now, try to move the cursor and insert notes on other steps.
-To delete a note, press \textsc{a} while holding \textsc{b}.
-When you have finished listening, press \textsc{start} again to stop the phrase.
+Maintenant, déplacez le curseur et insérez d’autres notes si vous le souhaitez.
+Pour supprimer une note, appuyez sur \textsc{a} en maintenant \textsc{b}.
+Quand vous avez fini d’écouter, appuyez de nouveau sur \textsc{start} pour arrêter la phrase.
 
-The clean pulse sound might get dull after while. Let's move on to the instrument
-screen by pressing \textsc{select+right}.
+Le son de base du canal Pulse peut vite devenir monotone. Passons donc à l’écran \textsc{instrument} avec \textsc{select+right}.
 
 \begin{figure}[hbtp]
 \centering
 \fbox{\includegraphics{instr-pulse}}
-\caption{Instrument Screen}
+\caption{Écran « Instrument »}
 \label{fig:instr}
 \end{figure}
 
-In the instrument screen, we can make the sound a little bit more interesting.
-Try changing the \textsc{env.} and \textsc{wave} fields by moving the cursor there and pressing \textsc{a+left/right}.
-As an example, changing the \textsc{env.} setting to \texttt{83} should make the sound shorter.
-Press \textsc{start} again to hear the changes as you make them!
+Dans l’écran des instruments, on peut rendre le son plus intéressant.
+Essayez de modifier les champs \textsc{env.} et \textsc{wave} en déplaçant le curseur dessus, puis en appuyant sur \textsc{a+left/right}.
+Par exemple, régler \textsc{env.} sur \texttt{83} rendra le son plus court.
+Appuyez sur \textsc{start} pour écouter les changements en temps réel !
 
-The \textsc{type} field sets the instrument type. Instrument types are specific for
-channels -- \textsc{pulse} instruments should only be played back in the pulse channels, \textsc{wave} and \textsc{kit}
-instruments in the wave channel, and \textsc{noise} instruments in the noise channel.
+Le champ \textsc{type} définit le type d’instrument.
+Les types sont propres à chaque canal :
+les instruments \textsc{pulse} ne fonctionnent que dans les canaux à onde carrée,
+les instruments \textsc{wave} et \textsc{kit} dans le canal wave,
+et les instruments \textsc{noise} dans le canal de bruit.
 
-Let's try out the sampled drum kits. Now, we have to change channel to the wave channel.
-Go back to the song screen, move the cursor over to the wave channel, and create a new
-chain and a new phrase by tapping \textsc{a}.
-Enter a note by tapping \textsc{a}, then \textsc{select+right} to edit the instrument.
-Change the instrument type to \textsc{kit} by pressing \textsc{a+right} on the type field,
-then go back to the phrase screen. Now, you should be able to enter drum sounds the same way
-you entered notes before.
+Essayons maintenant les kits de percussions échantillonnés.
+Pour cela, revenez à l’écran \textsc{Song}, placez le curseur sur le canal \textsc{Wave}, et créez une nouvelle chaîne et une nouvelle phrase en appuyant sur \textsc{a}.
+Insérez une note avec \textsc{a}, puis allez éditer l’instrument avec \textsc{select+right}.
+Changez le type en \textsc{kit} avec \textsc{a+right} dans le champ \textsc{type}, puis revenez à l’écran \textsc{Phrase}.
+Vous pouvez désormais saisir des sons de batterie comme vous saisissiez des notes.
 
-To create new chains and phrases, move the cursor to an empty step in song or chain screen and tap \textsc{a} twice.
+Pour créer de nouvelles chaînes et phrases, placez le curseur sur une ligne vide dans les écrans \textsc{Song} ou \textsc{Chain} et appuyez deux fois sur \textsc{a}.
 
-\section{Hexadecimal Number System}
+\section{Système de numération hexadécimal}
 
-Little Sound Dj uses hexadecimal numbers. While the usual decimal number system uses ten digits, 0-9, hexadecimal has 16 unique symbols: the digits 0 to 9, followed by the letters A to F.
-As an example, let's print a table of numbers -- first with decimal digits, then with
-hexadecimal digits\ldots
+Little Sound Dj utilise des nombres hexadécimaux.
+Alors que le système décimal habituel utilise dix chiffres (0–9), le système hexadécimal en utilise seize : les chiffres 0 à 9, suivis des lettres A à F.
+
+Par exemple, comparons les deux systèmes :
 
 \begin{figure}[hbtp]
 \centering
 
 \begin{tabular}{r|r|r|r|r|r|r|r|r|r|r}
- Decimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+Décimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
 \hline
- Hexadecimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & A \\
+Hexadécimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & A \\
 \end{tabular}
 
 \begin{tabular}{r|r|r|r|r|r|r|r|r|r|r}
- Decimal & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+Décimal & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
 \hline
- Hexadecimal & B & C & D & E & F & 10 & 11 & 12 & 13 & 14  \\
+Hexadécimal & B & C & D & E & F & 10 & 11 & 12 & 13 & 14  \\
 \end{tabular}
 
 \end{figure}
 
-Note that the hexadecimal and decimal values are really equal; just the representations differ.
-The main reason to use hexadecimal is to save screen space; with hexadecimal
-numbers, it is possible to represent every byte value using no more than two digits. (The
-byte value range is 0 to 255 -- that is, 0 to FF.)
+Notez que les valeurs décimales et hexadécimales sont identiques ; seule la représentation change.
+L’intérêt principal de l’hexadécimal est de gagner de la place à l’écran : chaque octet (valeur 0 à 255) peut être représenté avec seulement deux chiffres, de 00 à FF.
 
-Representing negative numbers with two digits only can be tricky. In Little Sound Dj,
-the numbers are wrapping. That means, when subtracting one from the smallest possible
-number (0), it will jump to the highest possible value (FF). So FF can represent -1 as well as 255, depending on the situation.
+Représenter des nombres négatifs sur deux chiffres peut être délicat.
+Dans Little Sound Dj, les nombres sont cycliques : si l’on soustrait 1 à 0, on obtient FF.
+Ainsi, FF peut représenter –1 ou 255 selon le contexte.
 
-If this does not make sense -- please don't worry too much -- it will become clear as you spend time with the program.
+Si cela semble abstrait, ne vous inquiétez pas : ce sera plus clair à l’usage.
 
-\section{Cartridge Troubleshooting}
+\section{Dépannage de la cartouche}
 
-Does your cartridge not start, crash, or act strange in other ways? Here are some things to try.
+Votre cartouche ne démarre pas, plante ou agit bizarrement ? Voici quelques pistes :
 
 \begin{itemize}
-	\item To avoid losing songs, always use fresh batteries. Replace as soon as the red light on your Game Boy gets faint, or the screen gets dim.
-	\item Clean cartridge pins using a cotton swab and alcohol.
-	\item Re-insert the cartridge a couple of times to remove oxide.
-	\item Make sure that the cartridge is firmly plugged in. Sometimes it can help to put a piece of tape on the cartridge to give it a snug fit.
-	\item Do a full reset of the cartridge memory. This is done by pressing \textsc{select+a+b} on the \textsc{load/save file} button in project screen.
-	\item Certain Game Boy Advance/Nintendo DS cartridges do not work with Little Sound Dj. If you have problems with such a cartridge, try one of the Little Sound Dj builds named ``Goomba''.
-	\item Search for help on the Little Sound Dj Wiki (\url{https://wiki.littlesounddj.com}) or ask in the Facebook group.
+\item Pour éviter toute perte de données, utilisez toujours des piles neuves. Remplacez-les dès que la LED rouge faiblit ou que l’écran s’assombrit.
+\item Nettoyez les contacts de la cartouche avec un coton-tige imbibé d’alcool.
+\item Réinsérez la cartouche plusieurs fois pour enlever l’oxyde.
+\item Assurez-vous qu’elle est bien enfoncée ; un morceau de ruban adhésif peut parfois aider à la caler fermement.
+\item Pour réinitialiser complètement la mémoire de la cartouche, maintenez \textsc{select+a+b} sur le bouton \textsc{load/save file} de l’écran \textsc{Project}.
+\item Certaines cartouches Game Boy Advance/Nintendo DS ne sont pas compatibles avec Little Sound Dj. Si c’est le cas, essayez une version de Little Sound Dj appelée « Goomba ».
+\item Consultez le wiki Little Sound Dj (\url{https://wiki.littlesounddj.com}) ou posez vos questions sur le groupe Facebook.
 \end{itemize}

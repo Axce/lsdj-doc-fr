@@ -17,13 +17,30 @@
     %\renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
 \documentclass[b5paper,titlepage]{book}
+
+%\usepackage[french]{babel}
+
+%%% Used for french translation %%%
 \usepackage[T1]{fontenc}
-\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\renewcommand{\contentsname}{Table des matières}
+\renewcommand{\chaptername}{Chapitre}
+\renewcommand{\today}{\number\day~\ifcase\month\or
+  janvier\or février\or mars\or avril\or mai\or juin\or
+  juillet\or août\or septembre\or octobre\or novembre\or décembre\fi~\number\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{palatino}
 \usepackage{xtab}
 \usepackage{subfig}
 \usepackage{graphicx}
 \setkeys{Gin}{width=4.8cm} % default image width
+
+%%% Used for french translation %%%
+\DeclareCaptionLabelSeparator{colon}{ : }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %\usepackage[section]{placeins}
 \usepackage{hyperref}
 \usepackage{microtype}
