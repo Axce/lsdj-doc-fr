@@ -1,4 +1,4 @@
-# lsdj-doc
-Little Sound Dj (LSDj) documentation
+# lsdj-doc-fr
+Documentation de Little Sound Dj (LSDj) (Traduction française)
 
-Screen captures taken using BGB. Graphics created using Dia and Gimp.
+Captures d'écran réalisées avec BGB. Graphiques créés avec Dia et Gimp.
