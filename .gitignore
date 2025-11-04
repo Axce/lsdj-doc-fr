@@ -5,3 +5,7 @@ lsdj-manual.pdf
 *.log
 *.dia~
 *.swp
+
+lsdj-manual.fdb_latexmk
+lsdj-manual.fls
+lsdj-manual.synctex.gz
