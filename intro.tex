@@ -14,7 +14,7 @@ La puce sonore de la Game Boy dispose de quatre canaux, chacun avec une résolut
 
 \section{Touches}
 
-Dans cette documentation, les touches sont indiquées de la manière suivante :
+Dans cette documentation, les touches sont indiquées de la manière suivante~:
 \begin{description}
 \item[\textsc{a}] bouton \textsc{a}
 \item[\textsc{b}] bouton \textsc{b}
@@ -55,7 +55,7 @@ Utilisez la croix directionnelle pour déplacer le curseur d’un canal à l’a
 Little Sound Dj comporte neuf écrans, disposés selon une carte affichée en bas à droite de l’écran (figure~\ref{fig:map}).
 
 Les écrans les plus utilisés se trouvent sur la rangée du milieu, classés par niveau de détail.
-Les écrans \textsc{song}, \textsc{chain} et \textsc{phrase} servent à la composition et fonctionnent en structure arborescente :
+Les écrans \textsc{song}, \textsc{chain} et \textsc{phrase} servent à la composition et fonctionnent en structure arborescente~:
 le morceau (\textsc{song}) contient des chaînes (\textsc{chains}),
 chaque chaîne contient des phrases (\textsc{phrases}),
 et chaque phrase contient des notes.
@@ -89,10 +89,10 @@ Là, appuyez sur \textsc{a} pour insérer une nouvelle phrase, puis \textsc{sele
 \end{figure}
 
 Dans cet écran, vous pouvez saisir des notes à jouer.
-Placez le curseur dans la colonne \textsc{note} et appuyez sur \textsc{a} : le texte C-2 apparaît : C étant la note (do), et 2 l’octave.
+Placez le curseur dans la colonne \textsc{note} et appuyez sur \textsc{a}~: le texte C-2 apparaît~: C étant la note (do), et 2 l’octave.
 Appuyez sur \textsc{start} pour lire la phrase.
 Remarquez que la phrase est lue de haut en bas.
-Vous pouvez modifier la note en maintenant \textsc{a} et en utilisant la croix directionnelle :
+Vous pouvez modifier la note en maintenant \textsc{a} et en utilisant la croix directionnelle~:
 \textsc{a+left/right} change la note, et \textsc{a+up/down} change l’octave.
 
 Maintenant, déplacez le curseur et insérez d’autres notes si vous le souhaitez.
@@ -104,72 +104,70 @@ Le son de base du canal Pulse peut vite devenir monotone. Passons donc à l’é
 \begin{figure}[hbtp]
 \centering
 \fbox{\includegraphics{instr-pulse}}
-\caption{Écran « Instrument »}
+\caption{Écran \textsc{instrument}}
 \label{fig:instr}
 \end{figure}
 
 Dans l’écran des instruments, on peut rendre le son plus intéressant.
 Essayez de modifier les champs \textsc{env.} et \textsc{wave} en déplaçant le curseur dessus, puis en appuyant sur \textsc{a+left/right}.
 Par exemple, régler \textsc{env.} sur \texttt{83} rendra le son plus court.
-Appuyez sur \textsc{start} pour écouter les changements en temps réel !
+Appuyez sur \textsc{start} pour écouter les changements en temps réel~!
 
-Le champ \textsc{type} définit le type d’instrument.
-Les types sont propres à chaque canal :
-les instruments \textsc{pulse} ne fonctionnent que dans les canaux à onde carrée,
-les instruments \textsc{wave} et \textsc{kit} dans le canal wave,
-et les instruments \textsc{noise} dans le canal de bruit.
+Le champ \textsc{type} définit le type d’instrument. Les types sont propres à chaque canal~:
+les instruments \textsc{pulse} ne fonctionnent que dans les canaux Pulse, les instruments \textsc{wave} et \textsc{kit}
+dans le canal Wave, et les instruments \textsc{noise} dans le canal Noise.
 
-Essayons maintenant les kits de percussions échantillonnés.
-Pour cela, revenez à l’écran \textsc{Song}, placez le curseur sur le canal \textsc{Wave}, et créez une nouvelle chaîne et une nouvelle phrase en appuyant sur \textsc{a}.
-Insérez une note avec \textsc{a}, puis allez éditer l’instrument avec \textsc{select+right}.
-Changez le type en \textsc{kit} avec \textsc{a+right} dans le champ \textsc{type}, puis revenez à l’écran \textsc{Phrase}.
+Essayons maintenant les kits de percussions samplés. Pour cela, nous devons utiliser le canal Wave.
+Revenez à l’écran \textsc{song}, placez le curseur sur le canal Wave, puis créez une nouvelle chaîne et une nouvelle phrase en appuyant sur \textsc{a}.
+Insérez une note avec \textsc{a}, puis \textsc{select+right} pour éditer l’instrument.
+Changez le type en \textsc{kit} avec \textsc{a+right} dans le champ \textsc{type}, puis revenez à l’écran \textsc{phrase}.
 Vous pouvez désormais saisir des sons de batterie comme vous saisissiez des notes.
 
-Pour créer de nouvelles chaînes et phrases, placez le curseur sur une ligne vide dans les écrans \textsc{Song} ou \textsc{Chain} et appuyez deux fois sur \textsc{a}.
+Pour créer de nouvelles chaînes et phrases, placez le curseur sur une ligne vide dans les écrans \textsc{song} ou \textsc{chain} et appuyez deux fois sur \textsc{a}.
 
 \section{Système de numération hexadécimal}
 
 Little Sound Dj utilise des nombres hexadécimaux.
-Alors que le système décimal habituel utilise dix chiffres (0–9), le système hexadécimal en utilise seize : les chiffres 0 à 9, suivis des lettres A à F.
+Alors que le système décimal habituel utilise dix chiffres, 0–9, le système hexadécimal en utilise seize~: les chiffres 0 à 9, suivis des lettres A à F.
 
-Par exemple, comparons les deux systèmes :
+Voici une table de conversion entre les deux systèmes~:
 
 \begin{figure}[hbtp]
 \centering
 
 \begin{tabular}{r|r|r|r|r|r|r|r|r|r|r}
-Décimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+ Décimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
 \hline
-Hexadécimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & A \\
+ Hexadécimal & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & A \\
 \end{tabular}
 
 \begin{tabular}{r|r|r|r|r|r|r|r|r|r|r}
-Décimal & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+ Décimal & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
 \hline
-Hexadécimal & B & C & D & E & F & 10 & 11 & 12 & 13 & 14  \\
+ Hexadécimal & B & C & D & E & F & 10 & 11 & 12 & 13 & 14  \\
 \end{tabular}
 
 \end{figure}
 
-Notez que les valeurs décimales et hexadécimales sont identiques ; seule la représentation change.
-L’intérêt principal de l’hexadécimal est de gagner de la place à l’écran : chaque octet (valeur 0 à 255) peut être représenté avec seulement deux chiffres, de 00 à FF.
+Notez bien que les valeurs décimales et hexadécimales sont identiques ; seule la représentation change.
+L’intérêt principal de l’hexadécimal est de gagner de la place à l’écran~: avec des nombres hexadécimaux, on peut représenter toutes les valeurs de 0 à 255 avec seulement deux chiffres, de 00 à FF.
 
 Représenter des nombres négatifs sur deux chiffres peut être délicat.
-Dans Little Sound Dj, les nombres sont cycliques : si l’on soustrait 1 à 0, on obtient FF.
+Dans Little Sound Dj, les nombres sont cycliques. Cela signifie que si l’on soustrait 1 au plus petit nombre possible (0), on obtient la plus grande valeur possible (FF).
 Ainsi, FF peut représenter –1 ou 255 selon le contexte.
 
-Si cela semble abstrait, ne vous inquiétez pas : ce sera plus clair à l’usage.
+Si cela semble abstrait, ne vous inquiétez pas~: ce sera plus clair à l’usage.
 
 \section{Dépannage de la cartouche}
 
-Votre cartouche ne démarre pas, plante ou agit bizarrement ? Voici quelques pistes :
+Votre cartouche ne démarre pas, plante ou agit bizarrement~? Voici quelques pistes~:
 
 \begin{itemize}
-\item Pour éviter toute perte de données, utilisez toujours des piles neuves. Remplacez-les dès que la LED rouge faiblit ou que l’écran s’assombrit.
-\item Nettoyez les contacts de la cartouche avec un coton-tige imbibé d’alcool.
-\item Réinsérez la cartouche plusieurs fois pour enlever l’oxyde.
-\item Assurez-vous qu’elle est bien enfoncée ; un morceau de ruban adhésif peut parfois aider à la caler fermement.
-\item Pour réinitialiser complètement la mémoire de la cartouche, maintenez \textsc{select+a+b} sur le bouton \textsc{load/save file} de l’écran \textsc{Project}.
-\item Certaines cartouches Game Boy Advance/Nintendo DS ne sont pas compatibles avec Little Sound Dj. Si c’est le cas, essayez une version de Little Sound Dj appelée « Goomba ».
-\item Consultez le wiki Little Sound Dj (\url{https://wiki.littlesounddj.com}) ou posez vos questions sur le groupe Facebook.
+    \item Pour éviter toute perte de données, utilisez toujours des piles neuves. Remplacez-les dès que la LED rouge de votre Game Boy faiblit ou que l’écran s’assombrit.
+    \item Nettoyez les contacts de la cartouche avec un coton-tige imbibé d’alcool.
+    \item Réinsérez la cartouche plusieurs fois pour enlever l’oxyde.
+    \item Assurez-vous que la cartouche est bien enfoncée. Un morceau de ruban adhésif peut parfois aider à la caler fermement.
+    \item Réinitialisez complètement la mémoire de la cartouche. Pour ce faire, maintenez \textsc{select+a+b} sur le bouton \textsc{load/save file} de l’écran \textsc{project}.
+    \item Certaines cartouches Game Boy Advance/Nintendo DS ne sont pas compatibles avec Little Sound Dj. Si c’est le cas, essayez une version de Little Sound Dj appelée « Goomba ».
+    \item Consultez le wiki Little Sound Dj (\url{https://wiki.littlesounddj.com}) ou posez vos questions sur le groupe Facebook.
 \end{itemize}

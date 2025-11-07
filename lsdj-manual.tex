@@ -13,7 +13,7 @@
     %\renewcommand{\textfraction}{0.07}	% allow minimal text w. figs
     %   Parameters for FLOAT pages (not text pages):
     %\renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
-	% N.B.: floatpagefraction MUST be less than topfraction !!
+	% N.B.: floatpagefraction MUST be less than topfraction~!!
     %\renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
 \documentclass[b5paper,titlepage]{book}
@@ -29,6 +29,9 @@
 \renewcommand{\today}{\number\day~\ifcase\month\or
   janvier\or février\or mars\or avril\or mai\or juin\or
   juillet\or août\or septembre\or octobre\or novembre\or décembre\fi~\number\year}
+\usepackage[all]{nowidow}
+\usepackage{indentfirst}
+\usepackage{csquotes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{palatino}
@@ -38,7 +41,7 @@
 \setkeys{Gin}{width=4.8cm} % default image width
 
 %%% Used for french translation %%%
-\DeclareCaptionLabelSeparator{colon}{ : }
+\DeclareCaptionLabelSeparator{colon}{~: }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\usepackage[section]{placeins}
